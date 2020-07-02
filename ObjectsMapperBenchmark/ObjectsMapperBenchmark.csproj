@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="AgileObjects.AgileMapper" Version="1.6.0" />
-    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
     <PackageReference Include="BenchmarkDotNet" Version="0.12.0" />
     <PackageReference Include="HolopaMir.ExpressMapper" Version="2.0.0" />
     <PackageReference Include="Mapster" Version="5.2.0" />
