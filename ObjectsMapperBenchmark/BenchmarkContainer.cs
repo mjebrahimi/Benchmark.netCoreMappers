@@ -20,6 +20,7 @@ namespace ObjectsMapperBenchmark
         private readonly SpotifyAlbumDto _spotifyAlbumDto;
         private readonly IMapper _autoMapper;
         private readonly MapperlyMapper _mapperlyMapper;
+        private readonly Hypercubus.Mapping.Mapper _hypercubusMapper;
 
         public BenchmarkContainer()
         {
@@ -87,6 +88,9 @@ namespace ObjectsMapperBenchmark
             // Mapperly
             _mapperlyMapper = new MapperlyMapper();
 
+            // HypercubusMapper
+            _hypercubusMapper = HypercubusMapper.Create();
+
             //Mapster don't need configuration
             //AgileMapper don't need configuration
         }
@@ -132,6 +136,12 @@ namespace ObjectsMapperBenchmark
         public void Mapperly()
         {
             _mapperlyMapper.Map(_spotifyAlbumDto);
+        }
+        
+        [Benchmark]
+        public void HypercubusMapping()
+        {
+            _hypercubusMapper.Map<SpotifyAlbumDto, SpotifyAlbum>(_spotifyAlbumDto);
         }
     }
 }
