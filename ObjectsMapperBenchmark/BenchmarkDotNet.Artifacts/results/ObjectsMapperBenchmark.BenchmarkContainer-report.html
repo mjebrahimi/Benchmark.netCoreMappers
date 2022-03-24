@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>ObjectsMapperBenchmark.BenchmarkContainer-20210227-180112</title>
+<title>ObjectsMapperBenchmark.BenchmarkContainer-20220323-234954</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -13,24 +13,26 @@
 </head>
 <body>
 <pre><code>
-BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19041.804 (2004/?/20H1)
-Intel Core i7-6700HQ CPU 2.60GHz (Skylake), 1 CPU, 8 logical and 4 physical cores
-.NET Core SDK=6.0.100-preview.1.21103.13
-  [Host]     : .NET Core 6.0.0 (CoreCLR 6.0.21.10212, CoreFX 6.0.21.10212), X64 RyuJIT
-  Job-HWLJXH : .NET Core 6.0.0 (CoreCLR 6.0.21.10212, CoreFX 6.0.21.10212), X64 RyuJIT
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19043.1586 (21H1/May2021Update)
+Intel Core i5-8250U CPU 1.60GHz (Kaby Lake R), 1 CPU, 8 logical and 4 physical cores
+.NET SDK=6.0.100
+  [Host]     : .NET 6.0.0 (6.0.21.52210), X64 RyuJIT
+  Job-RITSVR : .NET 6.0.0 (6.0.21.52210), X64 RyuJIT
 </code></pre>
 <pre><code>RunStrategy=Throughput  
 </code></pre>
 
 <table>
-<thead><tr><th> Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th><th>Gen 0</th><th>Gen 1</th><th>Gen 2</th><th>Allocated</th>
+<thead><tr><th>     Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Gen 0</th><th>Allocated</th>
 </tr>
-</thead><tbody><tr><td>AgileMapper</td><td>2,424.4 ns</td><td>41.40 ns</td><td>53.83 ns</td><td>2,425.1 ns</td><td>1.0071</td><td>-</td><td>-</td><td>3.09 KB</td>
-</tr><tr><td>TinyMapper</td><td>4,830.9 ns</td><td>95.63 ns</td><td>98.20 ns</td><td>4,811.1 ns</td><td>0.6866</td><td>-</td><td>-</td><td>2.11 KB</td>
-</tr><tr><td>ExpressMapper</td><td>3,189.3 ns</td><td>58.73 ns</td><td>87.90 ns</td><td>3,173.7 ns</td><td>1.5564</td><td>-</td><td>-</td><td>4.79 KB</td>
-</tr><tr><td>AutoMapper</td><td>1,994.9 ns</td><td>39.55 ns</td><td>114.73 ns</td><td>1,953.6 ns</td><td>0.6065</td><td>-</td><td>-</td><td>1.86 KB</td>
-</tr><tr><td>ManualMapping</td><td>465.7 ns</td><td>5.41 ns</td><td>4.52 ns</td><td>466.4 ns</td><td>0.3695</td><td>-</td><td>-</td><td>1.13 KB</td>
-</tr><tr><td>Mapster</td><td>454.6 ns</td><td>6.03 ns</td><td>5.03 ns</td><td>454.6 ns</td><td>0.6065</td><td>-</td><td>-</td><td>1.86 KB</td>
+</thead><tbody><tr><td>AgileMapper</td><td>2,280.0 ns</td><td>19.41 ns</td><td>17.21 ns</td><td>1.0071</td><td>3,160 B</td>
+</tr><tr><td>TinyMapper</td><td>3,652.3 ns</td><td>32.21 ns</td><td>30.13 ns</td><td>0.6866</td><td>2,160 B</td>
+</tr><tr><td>ExpressMapper</td><td>3,198.6 ns</td><td>42.70 ns</td><td>39.94 ns</td><td>1.5602</td><td>4,904 B</td>
+</tr><tr><td>AutoMapper</td><td>1,572.2 ns</td><td>11.23 ns</td><td>9.95 ns</td><td>0.6065</td><td>1,904 B</td>
+</tr><tr><td>ManualMapping</td><td>453.9 ns</td><td>3.12 ns</td><td>2.77 ns</td><td>0.3695</td><td>1,160 B</td>
+</tr><tr><td>Mapster</td><td>453.9 ns</td><td>5.31 ns</td><td>4.43 ns</td><td>0.6065</td><td>1,904 B</td>
+</tr><tr><td>Mapperly</td><td>278.3 ns</td><td>2.76 ns</td><td>2.58 ns</td><td>0.2933</td><td>920 B</td>
+</tr><tr><td>HypercubusMapping</td><td>407.4 ns</td><td>5.32 ns</td><td>4.98 ns</td><td>0.2933</td><td>920 B</td>
 </tr></tbody></table>
 </body>
 </html>
