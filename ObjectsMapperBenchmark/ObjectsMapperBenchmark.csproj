@@ -14,7 +14,7 @@
     <PackageReference Include="Mapster" Version="7.4.0-pre02" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta1" />
     <PackageReference Include="TinyMapper" Version="3.0.3" />
-    <PackageReference Include="Riok.Mapperly" Version="2.3.0" />
+    <PackageReference Include="Riok.Mapperly" Version="2.5.0" />
   </ItemGroup>
 
   <ItemGroup>
