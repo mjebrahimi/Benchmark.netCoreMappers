@@ -16,4 +16,4 @@ dotnet run --configuration Release
 ```
 
 ## Result
-![Benchmark](https://github.com/mjebrahimi/Benchmark.netCoreMappers/blob/master/Benchmark.netCoreMappers/Benchmark.png?raw=true)
+![Benchmark](https://github.com/mjebrahimi/Benchmark.netCoreMappers/blob/master/ObjectsMapperBenchmark/Benchmark.png?raw=true)
