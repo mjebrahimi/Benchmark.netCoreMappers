@@ -1,7 +1,6 @@
 ﻿using System.IO;
 using AutoMapper;
 using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Engines;
 using BenchmarkDotNet.Order;
 using Mapster;
@@ -13,20 +12,21 @@ namespace ObjectsMapperBenchmark
     [SimpleJob(RunStrategy.Throughput)]
     [MemoryDiagnoser]
     [KeepBenchmarkFiles(false)]
-    [GroupBenchmarksBy(BenchmarkLogicalGroupRule.ByMethod)]
+    //[GroupBenchmarksBy(BenchmarkLogicalGroupRule.ByMethod)]
     [Orderer(SummaryOrderPolicy.FastestToSlowest, MethodOrderPolicy.Declared)]
     public class BenchmarkContainer
     {
-        private readonly SpotifyAlbumDto _spotifyAlbumDto;
-        private readonly IMapper _autoMapper;
-        private readonly MapperlyMapper _mapperlyMapper;
+        private SpotifyAlbumDto _spotifyAlbumDto;
+        private IMapper _autoMapper;
+        private MapperlyMapper _mapperlyMapper;
 
-        public BenchmarkContainer()
+        [GlobalSetup]
+        public void Setup()
         {
             var json = File.ReadAllText("spotifyAlbum.json");
             _spotifyAlbumDto = SpotifyAlbumDto.FromJson(json);
 
-            //Automapper Configuration 
+            //Automapper Configuration
             var mapperConfig = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<SpotifyAlbumDto, SpotifyAlbum>();
@@ -48,7 +48,7 @@ namespace ObjectsMapperBenchmark
             });
             _autoMapper = mapperConfig.CreateMapper();
 
-            //TinyMapper Configuration 
+            //TinyMapper Configuration
             Nelibur.ObjectMapper.TinyMapper.Bind<SpotifyAlbumDto, SpotifyAlbum>();
             Nelibur.ObjectMapper.TinyMapper.Bind<CopyrightDto, Copyright>();
             Nelibur.ObjectMapper.TinyMapper.Bind<ArtistDto, Artist>();
@@ -66,7 +66,7 @@ namespace ObjectsMapperBenchmark
             Nelibur.ObjectMapper.TinyMapper.Bind<Image, ImageDto>();
             Nelibur.ObjectMapper.TinyMapper.Bind<Item, ItemDto>();
 
-            //ExpressMapper Configuration 
+            //ExpressMapper Configuration
             global::ExpressMapper.Mapper.Register<SpotifyAlbumDto, SpotifyAlbum>();
             global::ExpressMapper.Mapper.Register<CopyrightDto, Copyright>();
             global::ExpressMapper.Mapper.Register<ArtistDto, Artist>();
@@ -83,7 +83,7 @@ namespace ObjectsMapperBenchmark
             global::ExpressMapper.Mapper.Register<Tracks, TracksDto>();
             global::ExpressMapper.Mapper.Register<Image, ImageDto>();
             global::ExpressMapper.Mapper.Register<Item, ItemDto>();
-            
+
             // Mapperly
             _mapperlyMapper = new MapperlyMapper();
 
@@ -128,7 +128,7 @@ namespace ObjectsMapperBenchmark
             _spotifyAlbumDto.Adapt<SpotifyAlbum>();
         }
 
-        [Benchmark]
+        [Benchmark(Baseline = true)]
         public void Mapperly()
         {
             _mapperlyMapper.Map(_spotifyAlbumDto);

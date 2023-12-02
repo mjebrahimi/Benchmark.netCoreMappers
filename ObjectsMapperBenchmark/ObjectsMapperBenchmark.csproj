@@ -1,25 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+	<OutputType>Exe</OutputType>
+	<TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AgileObjects.AgileMapper" Version="1.8.1" />
-    <PackageReference Include="AutoMapper" Version="12.0.1" />
-    <PackageReference Include="BenchmarkDotNet" Version="0.13.6" />
-    <PackageReference Include="HolopaMir.ExpressMapper" Version="3.0.0-preview1" /><!--ExpressMapper.Core-->
-    <PackageReference Include="Mapster" Version="7.4.0-pre06" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="TinyMapper" Version="3.0.3" />
-    <PackageReference Include="Riok.Mapperly" Version="2.9.0-next.3" />
+	<PackageReference Include="AgileObjects.AgileMapper" Version="1.8.1" />
+	<PackageReference Include="AutoMapper" Version="12.0.1" />
+	<PackageReference Include="BenchmarkDotNet" Version="0.13.10" />
+	<PackageReference Include="ExpressMapper.Core" Version="1.9.3" />
+	<!--<PackageReference Include="HolopaMir.ExpressMapper" Version="3.0.0-preview1" />-->
+	<PackageReference Include="Mapster" Version="7.4.0" />
+	<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	<PackageReference Include="TinyMapper" Version="3.0.3" />
+	<PackageReference Include="Riok.Mapperly" Version="3.2.0" />
+	<PackageReference Include="System.Reflection.Emit" Version="4.7.0" />
+	<PackageReference Include="System.Reflection.TypeExtensions" Version="4.7.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="SpotifyAlbum.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+	<None Update="SpotifyAlbum.json">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
   </ItemGroup>
 
 </Project>
