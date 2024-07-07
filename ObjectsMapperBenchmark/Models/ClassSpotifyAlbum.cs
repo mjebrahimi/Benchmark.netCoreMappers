@@ -1,55 +1,42 @@
-﻿using System.IO;
-using System.Text.Json;
+﻿namespace ObjectsMapperBenchmark.Models;
 
-namespace ObjectsMapperBenchmark.Models;
-
-public class SpotifyAlbumDto
+public class ClassSpotifyAlbum
 {
     public string AlbumType { get; set; }
-    public ArtistDto[] Artists { get; set; }
+    public ClassArtist[] Artists { get; set; }
     public string[] AvailableMarkets { get; set; }
-    public CopyrightDto[] Copyrights { get; set; }
-    public ExternalIdsDto ExternalIds { get; set; }
-    public ExternalUrlsDto ExternalUrls { get; set; }
+    public ClassCopyright[] Copyrights { get; set; }
+    public ClassExternalIds ExternalIds { get; set; }
+    public ClassExternalUrls ExternalUrls { get; set; }
     public string Href { get; set; }
     public string Id { get; set; }
-    public ImageDto[] Images { get; set; }
+    public ClassImage[] Images { get; set; }
     public string Name { get; set; }
     public long Popularity { get; set; }
     public string ReleaseDate { get; set; }
     public string ReleaseDatePrecision { get; set; }
-    public TracksDto Tracks { get; set; }
+    public ClassTracks Tracks { get; set; }
     public string Type { get; set; }
     public string Uri { get; set; }
-
-    public static SpotifyAlbumDto FromJson()
-    {
-        var json = File.ReadAllText(Path.Combine("Models", "spotifyAlbum.json"));
-        var serializerOptions = new JsonSerializerOptions(JsonSerializerOptions.Default)
-        {
-            PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower
-        };
-        return JsonSerializer.Deserialize<SpotifyAlbumDto>(json, serializerOptions);
-    }
 }
 
-public class TracksDto
+public class ClassTracks
 {
     public string Href { get; set; }
-    public ItemDto[] Items { get; set; }
+    public ClassItem[] Items { get; set; }
     public long Limit { get; set; }
     public long Offset { get; set; }
     public long Total { get; set; }
 }
 
-public class ItemDto
+public class ClassItem
 {
-    public ArtistDto[] Artists { get; set; }
+    public ClassArtist[] Artists { get; set; }
     public string[] AvailableMarkets { get; set; }
     public long DiscNumber { get; set; }
     public long DurationMs { get; set; }
     public bool Explicit { get; set; }
-    public ExternalUrlsDto ExternalUrls { get; set; }
+    public ClassExternalUrls ExternalUrls { get; set; }
     public string Href { get; set; }
     public string Id { get; set; }
     public string Name { get; set; }
@@ -59,27 +46,27 @@ public class ItemDto
     public string Uri { get; set; }
 }
 
-public class ImageDto
+public class ClassImage
 {
     public long Height { get; set; }
     public string Url { get; set; }
     public long Width { get; set; }
 }
 
-public class ExternalIdsDto
+public class ClassExternalIds
 {
     public string Upc { get; set; }
 }
 
-public class CopyrightDto
+public class ClassCopyright
 {
     public string Text { get; set; }
     public string Type { get; set; }
 }
 
-public class ArtistDto
+public class ClassArtist
 {
-    public ExternalUrlsDto ExternalUrls { get; set; }
+    public ClassExternalUrls ExternalUrls { get; set; }
     public string Href { get; set; }
     public string Id { get; set; }
     public string Name { get; set; }
@@ -87,7 +74,7 @@ public class ArtistDto
     public string Uri { get; set; }
 }
 
-public class ExternalUrlsDto
+public class ClassExternalUrls
 {
     public string Spotify { get; set; }
 }

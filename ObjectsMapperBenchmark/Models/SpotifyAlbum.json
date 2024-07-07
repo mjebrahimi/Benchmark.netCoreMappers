@@ -83,7 +83,6 @@
   "external_urls": {
     "spotify": "https://open.spotify.com/album/0sNOF9WDwhWunNAHPD3Baj"
   },
-  "genres": [],
   "href": "https://api.spotify.com/v1/albums/0sNOF9WDwhWunNAHPD3Baj",
   "id": "0sNOF9WDwhWunNAHPD3Baj",
   "images": [
@@ -198,9 +197,7 @@
       }
     ],
     "limit": 50,
-    "next": null,
     "offset": 0,
-    "previous": null,
     "total": 13
   },
   "type": "album",

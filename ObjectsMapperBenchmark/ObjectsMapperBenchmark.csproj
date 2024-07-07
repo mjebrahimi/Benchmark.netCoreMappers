@@ -15,12 +15,11 @@
 	<PackageReference Include="AgileObjects.AgileMapper" Version="1.8.1" />
 	<PackageReference Include="ExpressMapper.Core" Version="1.9.3" />
 	<PackageReference Include="EmitMapper.Core" Version="1.0.2" />
-	<PackageReference Include="ValueInjecter" Version="3.2.0" />
-	<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	<PackageReference Include="DeepEqual" Version="5.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-	<None Update="SpotifyAlbum.json">
+	<None Update="Models\SpotifyAlbum.json">
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
   </ItemGroup>

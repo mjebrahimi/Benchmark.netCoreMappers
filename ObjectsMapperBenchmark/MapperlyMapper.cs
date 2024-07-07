@@ -1,9 +1,12 @@
-﻿using Riok.Mapperly.Abstractions;
+﻿using ObjectsMapperBenchmark.Models;
+using Riok.Mapperly.Abstractions;
 
 namespace ObjectsMapperBenchmark;
 
 [Mapper]
 public static partial class MapperlyMapper
 {
-    public static partial SpotifyAlbum Map(SpotifyAlbumDto spotifyAlbumDto);
+    public static partial ClassSpotifyAlbum MapToClass(SpotifyAlbumDto spotifyAlbumDto);
+
+    public static partial StructSpotifyAlbum MapToStruct(SpotifyAlbumDto spotifyAlbumDto);
 }

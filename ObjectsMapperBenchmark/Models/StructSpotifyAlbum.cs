@@ -1,55 +1,42 @@
-﻿using System.IO;
-using System.Text.Json;
+﻿namespace ObjectsMapperBenchmark.Models;
 
-namespace ObjectsMapperBenchmark.Models;
-
-public class SpotifyAlbumDto
+public struct StructSpotifyAlbum
 {
     public string AlbumType { get; set; }
-    public ArtistDto[] Artists { get; set; }
+    public StructArtist[] Artists { get; set; }
     public string[] AvailableMarkets { get; set; }
-    public CopyrightDto[] Copyrights { get; set; }
-    public ExternalIdsDto ExternalIds { get; set; }
-    public ExternalUrlsDto ExternalUrls { get; set; }
+    public StructCopyright[] Copyrights { get; set; }
+    public StructExternalIds ExternalIds { get; set; }
+    public StructExternalUrls ExternalUrls { get; set; }
     public string Href { get; set; }
     public string Id { get; set; }
-    public ImageDto[] Images { get; set; }
+    public StructImage[] Images { get; set; }
     public string Name { get; set; }
     public long Popularity { get; set; }
     public string ReleaseDate { get; set; }
     public string ReleaseDatePrecision { get; set; }
-    public TracksDto Tracks { get; set; }
+    public StructTracks Tracks { get; set; }
     public string Type { get; set; }
     public string Uri { get; set; }
-
-    public static SpotifyAlbumDto FromJson()
-    {
-        var json = File.ReadAllText(Path.Combine("Models", "spotifyAlbum.json"));
-        var serializerOptions = new JsonSerializerOptions(JsonSerializerOptions.Default)
-        {
-            PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower
-        };
-        return JsonSerializer.Deserialize<SpotifyAlbumDto>(json, serializerOptions);
-    }
 }
 
-public class TracksDto
+public struct StructTracks
 {
     public string Href { get; set; }
-    public ItemDto[] Items { get; set; }
+    public StructItem[] Items { get; set; }
     public long Limit { get; set; }
     public long Offset { get; set; }
     public long Total { get; set; }
 }
 
-public class ItemDto
+public struct StructItem
 {
-    public ArtistDto[] Artists { get; set; }
+    public StructArtist[] Artists { get; set; }
     public string[] AvailableMarkets { get; set; }
     public long DiscNumber { get; set; }
     public long DurationMs { get; set; }
     public bool Explicit { get; set; }
-    public ExternalUrlsDto ExternalUrls { get; set; }
+    public StructExternalUrls ExternalUrls { get; set; }
     public string Href { get; set; }
     public string Id { get; set; }
     public string Name { get; set; }
@@ -59,27 +46,27 @@ public class ItemDto
     public string Uri { get; set; }
 }
 
-public class ImageDto
+public struct StructImage
 {
     public long Height { get; set; }
     public string Url { get; set; }
     public long Width { get; set; }
 }
 
-public class ExternalIdsDto
+public struct StructExternalIds
 {
     public string Upc { get; set; }
 }
 
-public class CopyrightDto
+public struct StructCopyright
 {
     public string Text { get; set; }
     public string Type { get; set; }
 }
 
-public class ArtistDto
+public struct StructArtist
 {
-    public ExternalUrlsDto ExternalUrls { get; set; }
+    public StructExternalUrls ExternalUrls { get; set; }
     public string Href { get; set; }
     public string Id { get; set; }
     public string Name { get; set; }
@@ -87,7 +74,7 @@ public class ArtistDto
     public string Uri { get; set; }
 }
 
-public class ExternalUrlsDto
+public struct StructExternalUrls
 {
     public string Spotify { get; set; }
 }
