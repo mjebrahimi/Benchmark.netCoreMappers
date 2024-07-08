@@ -22,6 +22,7 @@ public class MapperlyAggressiveInliningBenchmark
     {
         _spotifyAlbumDto = SpotifyAlbumDto.FromJson();
 
+        //Make sure all mappers are working correctly
         ManualMapping_Class().ShouldDeepEqual(_spotifyAlbumDto);
         Mapperly_Class().ShouldDeepEqual(_spotifyAlbumDto);
         MapperlyAggressiveInlining_Class().ShouldDeepEqual(_spotifyAlbumDto);
