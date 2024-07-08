@@ -1,27 +1,29 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	<OutputType>Exe</OutputType>
-	<TargetFramework>net8.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-	<PackageReference Include="BenchmarkDotNet" Version="0.13.12" />
-	<PackageReference Include="BenchmarkDotNetVisualizer" Version="1.0.6" />
-	<PackageReference Include="AutoMapper" Version="13.0.1" />
-	<PackageReference Include="Mapster" Version="7.4.0" />
-	<PackageReference Include="TinyMapper" Version="3.0.3" />
-	<PackageReference Include="Riok.Mapperly" Version="3.6.0" />
-	<PackageReference Include="AgileObjects.AgileMapper" Version="1.8.1" />
-	<PackageReference Include="ExpressMapper.Core" Version="1.9.3" />
-	<PackageReference Include="EmitMapper.Core" Version="1.0.2" />
-	<PackageReference Include="DeepEqual" Version="5.1.0" />
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.12" />
+    <PackageReference Include="BenchmarkDotNetVisualizer" Version="1.0.6" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <!--Experimental local package for AggressiveInlining-->
+    <PackageReference Include="Riok.Mapperly" Version="0.0.1-dev.1720438967" />
+    <!--<PackageReference Include="Riok.Mapperly" Version="3.6.0" />-->
+    <PackageReference Include="TinyMapper" Version="3.0.3" />
+    <PackageReference Include="AgileObjects.AgileMapper" Version="1.8.1" />
+    <PackageReference Include="ExpressMapper.Core" Version="1.9.3" />
+    <PackageReference Include="EmitMapper.Core" Version="1.0.2" />
+    <PackageReference Include="DeepEqual" Version="5.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-	<None Update="Models\SpotifyAlbum.json">
-	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	</None>
+    <None Update="Models\SpotifyAlbum.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

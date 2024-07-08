@@ -145,7 +145,7 @@ public class Benchmark
     public ClassSpotifyAlbum ManualMapping_Class() => ManualMapper.MapToClass(_spotifyAlbumDto);
 
     [Benchmark(Description = "Mapperly"), BenchmarkCategory("Class")]
-    public ClassSpotifyAlbum Mapperly_Class() => MapperlyMapper.MapToClass(_spotifyAlbumDto);
+    public ClassSpotifyAlbum Mapperly_Class() => MapperlyMapperOld.MapToClass(_spotifyAlbumDto);
     #endregion
 
     #region Struct
@@ -171,6 +171,6 @@ public class Benchmark
     public StructSpotifyAlbum ManualMapping_Struct() => ManualMapper.MapToStruct(_spotifyAlbumDto);
 
     [Benchmark(Description = "Mapperly"), BenchmarkCategory("Struct")]
-    public StructSpotifyAlbum Mapperly_Struct() => MapperlyMapper.MapToStruct(_spotifyAlbumDto);
+    public StructSpotifyAlbum Mapperly_Struct() => MapperlyMapperOld.MapToStruct(_spotifyAlbumDto);
     #endregion
 }
