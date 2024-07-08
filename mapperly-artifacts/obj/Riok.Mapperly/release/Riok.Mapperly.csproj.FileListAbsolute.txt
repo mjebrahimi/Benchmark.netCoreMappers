@@ -1,0 +1,10 @@
+/home/mjebrahimi/mapperly/artifacts/bin/Riok.Mapperly/release/Riok.Mapperly.deps.json
+/home/mjebrahimi/mapperly/artifacts/bin/Riok.Mapperly/release/Riok.Mapperly.dll
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly/release/Riok.Mapperly.csproj.AssemblyReference.cache
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly/release/Riok.Mapperly.GeneratedMSBuildEditorConfig.editorconfig
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly/release/Riok.Mapperly.AssemblyInfoInputs.cache
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly/release/Riok.Mapperly.AssemblyInfo.cs
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly/release/Riok.Mapperly.csproj.CoreCompileInputs.cache
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly/release/Riok.Mapperly.sourcelink.json
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly/release/Riok.Map.0D360164.Up2Date
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly/release/Riok.Mapperly.dll

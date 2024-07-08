@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "xVbuo0uDv00=",
+  "success": true,
+  "projectFilePath": "/home/mjebrahimi/mapperly/src/Riok.Mapperly.Abstractions/Riok.Mapperly.Abstractions.csproj",
+  "expectedPackageFiles": [
+    "/home/mjebrahimi/.nuget/packages/meziantou.analyzer/2.0.159/meziantou.analyzer.2.0.159.nupkg.sha512",
+    "/home/mjebrahimi/.nuget/packages/meziantou.polyfill/1.0.38/meziantou.polyfill.1.0.38.nupkg.sha512",
+    "/home/mjebrahimi/.nuget/packages/microsoft.codeanalysis.publicapianalyzers/3.3.4/microsoft.codeanalysis.publicapianalyzers.3.3.4.nupkg.sha512",
+    "/home/mjebrahimi/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/mjebrahimi/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

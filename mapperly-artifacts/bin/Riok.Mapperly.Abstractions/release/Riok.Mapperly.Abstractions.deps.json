@@ -1,0 +1,74 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "Riok.Mapperly.Abstractions/0.0.1-dev.1720438967": {
+        "dependencies": {
+          "Meziantou.Analyzer": "2.0.159",
+          "Meziantou.Polyfill": "1.0.38",
+          "Microsoft.CodeAnalysis.PublicApiAnalyzers": "3.3.4",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "Riok.Mapperly.Abstractions.dll": {}
+        }
+      },
+      "Meziantou.Analyzer/2.0.159": {},
+      "Meziantou.Polyfill/1.0.38": {},
+      "Microsoft.CodeAnalysis.PublicApiAnalyzers/3.3.4": {},
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Riok.Mapperly.Abstractions/0.0.1-dev.1720438967": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Meziantou.Analyzer/2.0.159": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+Lu4NktCK98/PkPCluTA+uRHS7uvMXa/Z2WLPE8TDsS/ybYtaOhfq8Wi745fO26wI8rNGaJlKsfFskcKWC5eDQ==",
+      "path": "meziantou.analyzer/2.0.159",
+      "hashPath": "meziantou.analyzer.2.0.159.nupkg.sha512"
+    },
+    "Meziantou.Polyfill/1.0.38": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VHZvKZPwcYJZUwHi1Oh6ZtnqCRompotJjxtLG0Sk/eKgdM76EX6kn27Gq0jT9vymnwPG38hKHGKRFjRrIP8b3g==",
+      "path": "meziantou.polyfill/1.0.38",
+      "hashPath": "meziantou.polyfill.1.0.38.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.PublicApiAnalyzers/3.3.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kNLTfXtXUWDHVt5iaPkkiPuyHYlMgLI6SOFT4w88bfeI2vqSeGgHunFkdvlaCM8RDfcY0t2+jnesQtidRJJ/DA==",
+      "path": "microsoft.codeanalysis.publicapianalyzers/3.3.4",
+      "hashPath": "microsoft.codeanalysis.publicapianalyzers.3.3.4.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    }
+  }
+}

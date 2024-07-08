@@ -1,0 +1,11 @@
+/home/mjebrahimi/mapperly/artifacts/bin/Riok.Mapperly.Abstractions/release/Riok.Mapperly.Abstractions.deps.json
+/home/mjebrahimi/mapperly/artifacts/bin/Riok.Mapperly.Abstractions/release/Riok.Mapperly.Abstractions.dll
+/home/mjebrahimi/mapperly/artifacts/bin/Riok.Mapperly.Abstractions/release/Riok.Mapperly.Abstractions.xml
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly.Abstractions/release/Riok.Mapperly.Abstractions.csproj.AssemblyReference.cache
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly.Abstractions/release/Riok.Mapperly.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly.Abstractions/release/Riok.Mapperly.Abstractions.AssemblyInfoInputs.cache
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly.Abstractions/release/Riok.Mapperly.Abstractions.AssemblyInfo.cs
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly.Abstractions/release/Riok.Mapperly.Abstractions.csproj.CoreCompileInputs.cache
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly.Abstractions/release/Riok.Mapperly.Abstractions.sourcelink.json
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly.Abstractions/release/Riok.Mapperly.Abstractions.dll
+/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly.Abstractions/release/Riok.Mapperly.Abstractions.xml

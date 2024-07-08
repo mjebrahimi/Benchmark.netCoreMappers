@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Riok.Mapperly</id>
+    <version>0.0.1-dev.1720438967</version>
+    <authors>Mapperly Contributors, Lars Tönz, Manuel Allenspach</authors>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <icon>logo.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://mapperly.riok.app/</projectUrl>
+    <description>A .NET source generator for generating object mappings.
+      No runtime reflection.</description>
+    <tags>Mapper SourceGenerator</tags>
+    <repository type="git" url="https://github.com/riok/mapperly" commit="05ab18c1e6ed91e8a64d44b3c5efa91eba8f0f13" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/home/mjebrahimi/mapperly/README.md" target="/README.md" />
+    <file src="/home/mjebrahimi/mapperly/docs/static/img/logo.png" target="/logo.png" />
+    <file src="/home/mjebrahimi/mapperly/artifacts/bin/Riok.Mapperly/release/Riok.Mapperly.dll" target="analyzers/roslyn4.7/dotnet/cs/Riok.Mapperly.dll" />
+    <file src="/home/mjebrahimi/mapperly/artifacts/bin/Riok.Mapperly/release/Riok.Mapperly.Abstractions.dll" target="analyzers/roslyn4.7/dotnet/cs/Riok.Mapperly.Abstractions.dll" />
+    <file src="/home/mjebrahimi/mapperly/artifacts/bin/Riok.Mapperly/release/Riok.Mapperly.Abstractions.dll" target="lib/netstandard2.0/Riok.Mapperly.Abstractions.dll" />
+    <file src="/home/mjebrahimi/mapperly/artifacts/bin/Riok.Mapperly/release/Riok.Mapperly.Abstractions.xml" target="lib/netstandard2.0/Riok.Mapperly.Abstractions.xml" />
+    <file src="/home/mjebrahimi/mapperly/src/Riok.Mapperly/Riok.Mapperly.targets" target="build/Riok.Mapperly.targets" />
+  </files>
+</package>

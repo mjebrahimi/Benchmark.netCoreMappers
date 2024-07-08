@@ -1,0 +1,182 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/mjebrahimi/mapperly/src/Riok.Mapperly/Riok.Mapperly.csproj": {}
+  },
+  "projects": {
+    "/home/mjebrahimi/mapperly/src/Riok.Mapperly.Abstractions/Riok.Mapperly.Abstractions.csproj": {
+      "version": "0.0.1-dev.1720438967",
+      "restore": {
+        "projectUniqueName": "/home/mjebrahimi/mapperly/src/Riok.Mapperly.Abstractions/Riok.Mapperly.Abstractions.csproj",
+        "projectName": "Riok.Mapperly.Abstractions",
+        "projectPath": "/home/mjebrahimi/mapperly/src/Riok.Mapperly.Abstractions/Riok.Mapperly.Abstractions.csproj",
+        "packagesPath": "/home/mjebrahimi/.nuget/packages/",
+        "outputPath": "/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly.Abstractions/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mjebrahimi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "/usr/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Meziantou.Analyzer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.159, )"
+            },
+            "Meziantou.Polyfill": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.38, )"
+            },
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.4, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/mjebrahimi/mapperly/src/Riok.Mapperly/Riok.Mapperly.csproj": {
+      "version": "0.0.1-dev.1720438967",
+      "restore": {
+        "projectUniqueName": "/home/mjebrahimi/mapperly/src/Riok.Mapperly/Riok.Mapperly.csproj",
+        "projectName": "Riok.Mapperly",
+        "projectPath": "/home/mjebrahimi/mapperly/src/Riok.Mapperly/Riok.Mapperly.csproj",
+        "packagesPath": "/home/mjebrahimi/.nuget/packages/",
+        "outputPath": "/home/mjebrahimi/mapperly/artifacts/obj/Riok.Mapperly/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mjebrahimi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "/usr/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/home/mjebrahimi/mapperly/src/Riok.Mapperly.Abstractions/Riok.Mapperly.Abstractions.csproj": {
+                "projectPath": "/home/mjebrahimi/mapperly/src/Riok.Mapperly.Abstractions/Riok.Mapperly.Abstractions.csproj",
+                "privateAssets": "all"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Meziantou.Analyzer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.159, )"
+            },
+            "Meziantou.Polyfill": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.38, )"
+            },
+            "Microsoft.CodeAnalysis.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.4, )"
+            },
+            "Microsoft.CodeAnalysis.BannedApiAnalyzers": {
+              "include": "Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.4, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
