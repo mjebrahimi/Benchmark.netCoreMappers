@@ -22,6 +22,7 @@ public class Benchmark
     private IMapper _autoMapper;
     private ObjectsMapper<SpotifyAlbumDto, ClassSpotifyAlbum> _emitMapperClass;
     private ObjectsMapper<SpotifyAlbumDto, StructSpotifyAlbum> _emitMapperStruct;
+    private ForgeMapMapper _forgeMapMapper;
 
     [GlobalSetup]
     public void Setup()
@@ -101,6 +102,8 @@ public class Benchmark
         //Mapperly does not need configuration
         //Mapster does not need configuration
         //AgileMapper does not need configuration
+        //ForgeMap does not need configuration (source generator)
+        _forgeMapMapper = new ForgeMapMapper();
 
         //Make sure all mappers are working correctly
         AutoMapper_Class().ShouldDeepEqual(_spotifyAlbumDto);
@@ -111,6 +114,7 @@ public class Benchmark
         EmitMapper_Class().ShouldDeepEqual(_spotifyAlbumDto);
         ManualMapping_Class().ShouldDeepEqual(_spotifyAlbumDto);
         Mapperly_Class().ShouldDeepEqual(_spotifyAlbumDto);
+        ForgeMap_Class().ShouldDeepEqual(_spotifyAlbumDto);
 
         AutoMapper_Struct().ShouldDeepEqual(_spotifyAlbumDto);
         Mapster_Struct().ShouldDeepEqual(_spotifyAlbumDto);
@@ -120,6 +124,7 @@ public class Benchmark
         EmitMapper_Struct().ShouldDeepEqual(_spotifyAlbumDto);
         ManualMapping_Struct().ShouldDeepEqual(_spotifyAlbumDto);
         Mapperly_Struct().ShouldDeepEqual(_spotifyAlbumDto);
+        ForgeMap_Struct().ShouldDeepEqual(_spotifyAlbumDto);
     }
 
     #region Class
@@ -146,6 +151,9 @@ public class Benchmark
 
     [Benchmark(Description = "Mapperly"), BenchmarkCategory("Class")]
     public ClassSpotifyAlbum Mapperly_Class() => MapperlyMapperOld.MapToClass(_spotifyAlbumDto);
+
+    [Benchmark(Description = "ForgeMap"), BenchmarkCategory("Class")]
+    public ClassSpotifyAlbum ForgeMap_Class() => _forgeMapMapper.MapToClass(_spotifyAlbumDto);
     #endregion
 
     #region Struct
@@ -172,5 +180,8 @@ public class Benchmark
 
     [Benchmark(Description = "Mapperly"), BenchmarkCategory("Struct")]
     public StructSpotifyAlbum Mapperly_Struct() => MapperlyMapperOld.MapToStruct(_spotifyAlbumDto);
+
+    [Benchmark(Description = "ForgeMap"), BenchmarkCategory("Struct")]
+    public StructSpotifyAlbum ForgeMap_Struct() => _forgeMapMapper.MapToStruct(_spotifyAlbumDto);
     #endregion
 }
